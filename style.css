@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+    color: #000;
+    background: #fff;
+}
+
+nav {
+    position: fixed;
+    background: #1b1b1b;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+}
+
+nav .menu {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.menu ul {
+    display: inline-flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 7px;
+}
+
+.menu ul li:first-child {
+    margin-left: 0px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background: #fff;
+    color: black;
+}
+
+.img {
+    background: url('sketch1609556507298.png')no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.img::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.center {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.center .title {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.center .sub_title {
+    color: #fff;
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.center .btns {
+    margin-top: 20px;
+}
+
+.center .btns button {
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.center .btns button:first-child {
+    color: #fff;
+    background: none;
+}
+
+.btns button:first-child:hover {
+    background: white;
+    color: black;
+}
+
+.center .btns button:last-child {
+    background: white;
+    color: black;
+}
+
+.sub_title {
+    color: orangered;
+}
+
+
+/* first */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,100;1,200&display=swap');
+:root {
+    --transition: all 300ms ease-in-out;
+    --dark-color: #332e29;
+    --light-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+button,
+.btn {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.vh-100 {
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+    color: var(--dark-color)
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+.head {
+    opacity: 0.8;
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+#header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("Untitled-1.jpg") center/cover no-repeat fixed;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#header .container {
+    width: 100%;
+}
+
+.header-content {
+    padding-bottom: 4rem;
+}
+
+.header-content h1 {
+    font-size: 4.5rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: var(--light-color)
+}
+
+.header-content h3 {
+    color: var(--light-color);
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+}
+
+.note {
+    display: flex;
+    margin-top: 3.5rem;
+}
+
+.note li a {
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-color);
+    margin-right: 1rem;
+    border-radius: .3rem;
+    box-shadow: 0 0 6px 5px rgba (0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+
+.about-left {
+    margin-bottom: 4rem;
+    height: 480px;
+    overflow: hidden;
+}
+
+.btn-down {
+    font-size: 3rem;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: var(--transition);
+}
+
+.btn-down:hover {
+    opacity: 0.8;
+    transform: translateY(5px);
+}
+
+.btn-down-white {
+    color: var(--light-color);
+}
+
+.title {
+    margin-bottom: 5rem;
+}
+
+.title h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    position: relative;
+}
+
+#work {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("bgimg.jpg") center/cover no-repeat fixed;
+    color: var(--light-color);
+}
+
+#contact {
+    background-color: rgb(248, 248, 248);
+}
+
+.contact-content {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.contact-left {
+    margin-bottom: 5rem;
+}
+
+.contact-left .lead {
+    padding: 0.5rem;
+}
+
+.contact-left form {
+    margin-top: 3rem;
+}
+
+.contact-left form .form-control {
+    display: block;
+    margin: 2rem;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    width: 100%;
+}
+
+.contact-left form .form-control::placeholder {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-left .btn-submit {
+    padding: 1.4rem 3rem;
+    font-family: "poppins", sans-serif;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: var(--transition);
+}
