@@ -1,0 +1,16 @@
+#btn {
+    display: grid;
+    place-items: center;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#btn {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    transition: all .3s ease-in;
+}
